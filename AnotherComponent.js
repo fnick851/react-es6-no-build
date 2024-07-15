@@ -1,5 +1,5 @@
-import html from "./jsx.js";
-import { useState } from "https://unpkg.com/es-react@latest/dev/react.js";
+import { html, React } from "./deps.js";
+const useState = React.useState;
 
 const AnotherComponent = ({ message }) => {
   const [count, setCount] = useState(0);

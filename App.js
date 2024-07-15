@@ -1,11 +1,8 @@
-import React from "https://unpkg.com/es-react@latest/dev/react.js";
 import AnotherComponent from "./AnotherComponent.js";
-import htm from "https://unpkg.com/htm?module";
-
-const html = htm.bind(React.createElement);
+import { html } from "./deps.js";
 
 const App = () => {
-  const message = "Hello from App component!";
+  const message = "Passed from App component!";
   return html`
     <div>
       <h1>Hello, React with ES6 Modules!</h1>
